@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>SpeedyURLs</AssemblyName>
+    <RootNamespace>SpeedyURLs</RootNamespace>
+    <Version>2.2.0</Version>
+    <Authors>LeCloutPanda, dfgHiatus</Authors>
+    <Description>Remove the five second cooldown on URL consent popups for Resonite Mod Loader.</Description>
+    <GameDir Condition="'$(GameDir)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Resonite</GameDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ResoniteModLoader" Version="5.0.1" PrivateAssets="all" />
+    <Reference Include="FrooxEngine">
+      <HintPath>$(GameDir)\FrooxEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Elements.Core">
+      <HintPath>$(GameDir)\Elements.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+# Build output
+bin/
+obj/
+
+# IDE and editor files
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Local tooling state
+.dotnet-home/
